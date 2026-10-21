@@ -11,9 +11,6 @@ body {
     padding: 50px 20px;
 
     font-family: Arial, sans-serif;
-    color: #612238;
-
-    background: linear-gradient(135deg, #f5a9be, #ffe0e8);
 
     display: flex;
     justify-content: center;
@@ -28,30 +25,37 @@ body {
     max-width: 800px;
     padding: 60px 45px;
 
-    background: linear-gradient(135deg, #fff5f7, #ffdce6);
-
-    border: 4px solid #c54d70;
-    border-radius: 25px;
+    border: 3px solid;
+    border-radius: 15px;
 
     text-align: center;
 
-    box-shadow: 0 15px 40px #a64a6680;
+    box-shadow: 0 15px 35px #00000035;
 }
 
 
-/* FLEURS  */
+/* SYMBOLES */
 
-.fleurs {
-    font-size: 35px;
-    color: #b52e55;
-    letter-spacing: 12px;
+.symbole {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 8px;
     margin-bottom: 30px;
 }
 
-.fleurs.bas {
+.symbole.bas {
     margin-top: 35px;
     margin-bottom: 0;
-    font-size: 27px;
+}
+
+.bebe-symbole {
+    font-size: 55px;
+    letter-spacing: 0;
+}
+
+.barreaux {
+    font-size: 45px;
+    letter-spacing: 5px;
 }
 
 
@@ -59,24 +63,19 @@ body {
 
 h1 {
     font-family: Georgia, serif;
-    font-size: 45px;
-    color: #a51e42;
-
+    font-size: 43px;
     line-height: 1.3;
     margin-bottom: 30px;
 }
 
 
-
+/* LIGNE DÉCORATIVE */
 
 .separateur {
     width: 120px;
     height: 4px;
-
-    background-color: #c54d70;
-    border-radius: 10px;
-
     margin: 0 auto 35px;
+    border-radius: 5px;
 }
 
 
@@ -89,10 +88,9 @@ p {
 }
 
 
+/* PHRASE FINALE */
 
 .conclusion {
-    background: linear-gradient(135deg, #a51e42, #d85b80);
-
     color: white;
     font-family: Georgia, serif;
     font-size: 25px;
@@ -101,66 +99,93 @@ p {
     padding: 30px;
     margin-top: 40px;
 
-    border-radius: 18px;
-    box-shadow: 0 8px 20px #a51e4240;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px #00000025;
 }
 
 
-/* PAGE 2 : MATERNITÉ */
+/* PAGE 1 : SILENCE - VERT KAKI */
+
+body.silence {
+    background: linear-gradient(135deg, #a9b69a, #d5ddc8);
+    color: #35432f;
+}
+
+.silence .contenu {
+    background: linear-gradient(135deg, #e5e9d9, #c7d1b8);
+    border-color: #687b59;
+}
+
+.silence h1 {
+    color: #354c35;
+}
+
+.silence .symbole {
+    color: #536b49;
+}
+
+.silence .separateur {
+    background-color: #687b59;
+}
+
+.silence .conclusion {
+    background: linear-gradient(135deg, #465d3f, #788b69);
+}
+
+
+/* PAGE 2 : MATERNITÉ - BLEU GRIS */
 
 body.maternite {
-    background: linear-gradient(135deg, #d8c5ed, #eee3f7);
-    color: #594166;
+    background: linear-gradient(135deg, #91aabb, #d4e1e7);
+    color: #304958;
 }
 
 .maternite .contenu {
-    background: linear-gradient(135deg, #f8f1fc, #e6d4f1);
-    border-color: #a883bd;
+    background: linear-gradient(135deg, #e5eef1, #b9ced8);
+    border-color: #66869a;
 }
 
 .maternite h1 {
-    color: #684477;
+    color: #34566d;
 }
 
-.maternite .fleurs {
-    color: #9465aa;
+.maternite .symbole {
+    color: #456e86;
 }
 
 .maternite .separateur {
-    background-color: #a883bd;
+    background-color: #66869a;
 }
 
 .maternite .conclusion {
-    background: linear-gradient(135deg, #684477, #a77abd);
+    background: linear-gradient(135deg, #385a70, #7899ad);
 }
 
 
-
-/* PAGE 3 : CONTRÔLE */
+/* PAGE 3 : CONTRÔLE - ROUGE BRIQUE */
 
 body.controle {
-    background: linear-gradient(135deg, #4b1729, #a9405d);
-    color: #ffe6ec;
+    background: linear-gradient(135deg, #98585a, #d5a6a0);
+    color: #502c30;
 }
 
 .controle .contenu {
-    background: linear-gradient(135deg, #4a1728, #75263f);
-    border-color: #d37b96;
-    box-shadow: 0 15px 40px #210b1680;
+    background: linear-gradient(135deg, #ead0ca, #c88e8c);
+    border-color: #854449;
 }
 
 .controle h1 {
-    color: #ffc3d0;
+    color: #71373d;
 }
 
-.controle .fleurs {
-    color: #f2a5ba;
+.controle .symbole {
+    color: #854449;
 }
 
 .controle .separateur {
-    background-color: #f2a5ba;
+    background-color: #854449;
 }
 
 .controle .conclusion {
-    background: linear-gradient(135deg, #a32f4c, #d75e79);
+    background: linear-gradient(135deg, #71373d, #a65b60);
 }
