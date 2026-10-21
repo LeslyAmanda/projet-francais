@@ -1,4 +1,208 @@
 
+/* STYLE GÉNÉRAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CARTE CENTRALE */
+
+.contenu {
+    width: 100%;
+    max-width: 800px;
+    padding: 60px 45px;
+
+    border: 3px solid;
+    border-radius: 15px;
+
+    text-align: center;
+    box-shadow: 0 15px 35px #00000035;
+}
+
+
+/* SYMBOLES */
+
+.symbole {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.symbole.bas {
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+/* Bébé et nuages */
+
+.bebe-symbole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    font-size: 55px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.petit-nuage {
+    font-size: 25px;
+    color: #34566d;
+}
+
+.grand-nuage {
+    font-size: 45px;
+    color: #34566d;
+}
+
+
+/* TITRE */
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+
+/* LIGNE DÉCORATIVE */
+
+.separateur {
+    width: 120px;
+    height: 4px;
+    margin: 0 auto 35px;
+    border-radius: 5px;
+}
+
+
+/* PARAGRAPHE */
+
+p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* PHRASE FINALE */
+
+.conclusion {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+
+    padding: 30px;
+    margin-top: 40px;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 20px #00000025;
+}
+
+
+/* PAGE 1 : SILENCE - VERT KAKI */
+
+body.silence {
+    background: linear-gradient(135deg, #a9b69a, #d5ddc8);
+    color: #35432f;
+}
+
+.silence .contenu {
+    background: linear-gradient(135deg, #e5e9d9, #c7d1b8);
+    border-color: #687b59;
+}
+
+.silence h1 {
+    color: #354c35;
+}
+
+.silence .symbole {
+    color: #536b49;
+}
+
+.silence .separateur {
+    background-color: #687b59;
+}
+
+.silence .conclusion {
+    background: linear-gradient(135deg, #465d3f, #788b69);
+}
+
+
+/* PAGE 2 : MATERNITÉ - BLEU GRIS */
+
+body.maternite {
+    background: linear-gradient(135deg, #91aabb, #d4e1e7);
+    color: #304958;
+}
+
+.maternite .contenu {
+    background: linear-gradient(135deg, #e5eef1, #b9ced8);
+    border-color: #66869a;
+}
+
+.maternite h1 {
+    color: #34566d;
+}
+
+.maternite .symbole {
+    color: #456e86;
+}
+
+.maternite .separateur {
+    background-color: #66869a;
+}
+
+.maternite .conclusion {
+    background: linear-gradient(135deg, #385a70, #7899ad);
+}
+
+
+/* PAGE 3 : CONTRÔLE - ROUGE BRIQUE */
+
+body.controle {
+    background: linear-gradient(135deg, #98585a, #d5a6a0);
+    color: #502c30;
+}
+
+.controle .contenu {
+    background: linear-gradient(135deg, #ead0ca, #c88e8c);
+    border-color: #854449;
+}
+
+.controle h1 {
+    color: #71373d;
+}
+
+.controle .symbole {
+    color: #854449;
+}
+
+.controle .separateur {
+    background-color: #854449;
+}
+
+.controle .conclusion {
+    background: linear-gradient(135deg, #71373d, #a65b60);
+}
+
+
 /* ADAPTATION POUR LES TÉLÉPHONES */
 
 @media (max-width: 600px) {
@@ -28,10 +232,6 @@
     /* Nuages et bébé */
 
     .bebe-symbole {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
         gap: 5px;
         font-size: 35px;
         letter-spacing: 0;
